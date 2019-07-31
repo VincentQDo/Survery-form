@@ -121,6 +121,15 @@ label, #description{
     border: solid .7px gray;
 }
 
+.footer{
+    background-color: #555555;
+    color: #f2f2f2;
+    padding: 15px;
+    font-size: 10px;
+    margin: 0px;
+    text-align: left;
+}
+
 @media only screen and (max-width: 768px){
     .text-input{
         width: 90%;
