@@ -39,14 +39,17 @@ body {
     margin: 0px;
 }
 
-#description{
-    font-size: 18px;
-    font-weight: 600;
-}
 label, #description{
+    display: inline-block;
     font-weight: 700;
     color: #05386B;
-    margin: 15px;
+    margin: 5px;
+}
+
+#description{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .header {
@@ -88,7 +91,7 @@ label, #description{
 }
 
 .space-between {
-    margin: 20px;
+    margin: 15px;
 }
 
 .text-input {
@@ -114,7 +117,7 @@ label, #description{
 .dropbtn{
     height: 30px;
     width: 150px;
-    margin-top: 10px;
+    margin-top: 5px;
     border: solid .7px gray;
 }
 
