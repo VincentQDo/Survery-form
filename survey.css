@@ -1,0 +1,52 @@
+html {
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+
+}
+
+body * {
+    margin: 4px;
+}
+
+.nav-bar {
+
+}
+
+.header {
+    text-align: center;
+}
+
+.page-outline {
+    border: solid 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    margin: 10px;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #e7e7e7;
+    text-align: center;
+    color: black;
+    
+}
+
+.button:hover {
+    box-shadow: 0px 0px 10px gray;
+}
+
+#comment {
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    text-align: left;
+    resize: vertical;
+    vertical-align: middle;
+
+}
+
