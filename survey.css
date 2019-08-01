@@ -8,27 +8,27 @@ html {
 }
 
 /* Nav bar */
-.nav-bar {
+.social-buttons {
   background-color: #5cdb95;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.nav-bar li {
+.social-buttons li {
   display: inline-block;
 }
 
-.nav-bar li a:hover {
+.social-buttons li a:hover {
   color: #edf5e1;
 }
 
-.nav-bar li a {
+.social-buttons li a {
   display: block;
   color: #05386b;
   text-decoration: none;
   padding: 10px 15px;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 }
 /* Nav bar */
@@ -54,8 +54,8 @@ body {
 .page-outline {
   border: solid 1px #edf5e1;
   border-radius: 2px;
-  margin: 5% 10%;
-  margin-top: 3%;
+  margin: 0% 10%;
+  margin-bottom: 1%;
   background-color: #edf5e1;
 }
 
