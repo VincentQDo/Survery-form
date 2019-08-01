@@ -1,87 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Survey-form</title>
-    <link rel="stylesheet" href="survey.css">
+    <link rel="stylesheet" href="survey.css" />
     <script src="https://kit.fontawesome.com/18bacdbff7.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div>
-        <ul class="nav-bar">
-            <li><a rel="external" href="https://codepen.io/vincentqdo/pens/public/" target="_blank"><i class="fab fa-codepen icons"></i></a></li>
-            <li><a rel="external" href="https://github.com/VincentQDo/Survery-form" target="_blank"><i class="fab fa-github-square icons"></i></a></li>
-            <li><a rel="external" href="https://www.freecodecamp.org/fcc37948165-26d0-4027-ae43-8678d3c76d3b" target="_blank"><i class="fab fa-free-code-camp icons"></i></a></li>
-            <li><a rel="external" href="https://www.linkedin.com/in/vincent-quang-do" target="_blank"><i class="fab fa-linkedin icons"></i></a></li> 
-        </ul>
+      <ul class="nav-bar">
+        <li>
+          <a
+            rel="external"
+            href="https://codepen.io/vincentqdo/pens/public/"
+            target="_blank"
+            ><i class="fab fa-codepen icons"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            rel="external"
+            href="https://github.com/VincentQDo/Survery-form"
+            target="_blank"
+            ><i class="fab fa-github-square icons"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            rel="external"
+            href="https://www.freecodecamp.org/fcc37948165-26d0-4027-ae43-8678d3c76d3b"
+            target="_blank"
+            ><i class="fab fa-free-code-camp icons"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            rel="external"
+            href="https://www.linkedin.com/in/vincent-quang-do"
+            target="_blank"
+            ><i class="fab fa-linkedin icons"></i
+          ></a>
+        </li>
+      </ul>
     </div>
-        <main>
-            <h1 id="title" class="header">Contact Info</h1>
-            <div class="page-outline">
-                <p id="description">Please enter your contact information</p>
-                <form id="survey-form" action="">
-                    <div class="space-between">
-                        <label for="name" id="name-label">Name<span class="required">*</span>:</label><br>
-                        <input type="text" id="name" class="text-input" placeholder="Enter your name" required>
-                    </div>
+    <main>
+      <h1 id="title" class="header">Contact Info</h1>
+      <div class="page-outline">
+        <p id="description">Please enter your contact information</p>
+        <form id="survey-form" action="">
+          <div class="space-between">
+            <label for="name" id="name-label" class="input-desc"
+              >Name<span class="required input-labels">*</span>:</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="text-input"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
 
-                    <div class="space-between">
-                        <label for="email" id="email-label">Email<span class="required">*</span>:</label><br>
-                        <input type="email" id="email" class="text-input" placeholder="Enter your email" required>
-                    </div>
+          <div class="space-between">
+            <label for="email" id="email-label" class="input-desc"
+              >Email<span class="required input-labels">*</span>:</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="text-input"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
 
-                    <div class="space-between">
-                        <label for="phone" id="email-label">Phone<span class="required">*</span>:</label><br>
-                        <input type="tel" id="phone" class="text-input" placeholder="Enter your phone number" required>
-                    </div>
+          <div class="space-between">
+            <label for="phone" id="phone-label" class="input-desc"
+              >Phone<span class="required input-labels">*</span>:</label
+            >
+            <input
+              type="tel"
+              id="phone-number"
+              class="text-input"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
 
-                    <div class="space-between">
-                        <label for="number" id="number-label">Age<span class="required">*</span>:</label><br>
-                        <input type="number" id="number" class="text-input" min="0" max="125" placeholder="Enter your age">
-                    </div>
+          <div class="space-between">
+            <label for="number" id="number-label" class="input-desc"
+              >Age<span class="required input-labels">*</span>:</label
+            >
+            <input
+              type="number"
+              id="number"
+              class="text-input"
+              min="6"
+              max="120"
+              placeholder="Enter your age"
+            />
+          </div>
 
-                    <div class="space-between dropdown">
-                        <label for="rating">Which option best describe you:</label><br>
-                        <select name="rating" id="dropdown" class="dropbtn">
-                            <option value="" disabled selected>Select an option</option>
-                            <option value="student">Student</option>
-                            <option value="pro">Professional</option>
-                        </select>
-                    </div>
+          <div class="space-between dropdown">
+            <label for="self-desc" class="input-desc"
+              >Which option best describe you:</label
+            >
+            <select name="self-desc" id="dropdown" class="dropbtn">
+              <option value="" disabled selected>Select an option</option>
+              <option value="student">Student</option>
+              <option value="pro">Professional</option>
+            </select>
+          </div>
 
-                    <div class="space-between">
-                        <label for="gender">Gender:</label><br>
-                        <input type="radio" name="gender" value="female">Female
-                        <input type="radio" name="gender" value="male">Male
-                    </div>
+          <div class="space-between">
+            <span class="input-desc">Gender:</span>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female" class="radio-btn-label">Female</label>
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male" class="radio-btn-label">Male</label>
+          </div>
 
-                    <div class="space-between">
-                        <label for="ice-cream-flavor">Best way to contact you:</label><br>
-                        <input type="checkbox" name="contact-medium" value="email">E-mail
-                        <input type="checkbox" name="contact-medium" value="phone">Phone
-                        <input type="checkbox" name="contact-medium" value="mail">Mail
-                    </div>
+          <div class="space-between">
+            <label for="contact-medium" class="input-desc"
+              >Best way to contact you:</label
+            >
+            <input
+              type="checkbox"
+              name="contact-medium"
+              value="e-mail"
+              id="e-mail"
+            />
+            <label for="e-mail">E-mail</label>
+            <input
+              type="checkbox"
+              name="contact-medium"
+              value="phone"
+              id="phone-checkbox"
+            />
+            <label for="phone-checkbox">Phone</label>
+            <input
+              type="checkbox"
+              name="contact-medium"
+              value="mail"
+              id="mail"
+            />
+            <label for="mail">Mail</label>
+          </div>
 
-                    <div class="">
-                        <label for="comment">Additional Comments: </label><br>
-                        <textarea name="comment" id="comment" class="text-input" cols="30" rows="10" placeholder="Your comment..."></textarea>
-                    </div>
+          <div class="">
+            <label for="comment" class="input-desc"
+              >Additional Comments:
+            </label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="text-input"
+              cols="30"
+              rows="10"
+              placeholder="Your comment..."
+            ></textarea>
+          </div>
 
-                    <div>
-                        <button type="submit" id="submit" class="button">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </main>
-</body>
-<div>
-    <p class="footer">Coded by <strong>Vincent Do</strong> for educational purposes.</p>
-</div>
+          <div>
+            <button type="submit" id="submit" class="button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <div>
+    <footer class="footer">
+      Coded by <strong>Vincent Do</strong> for educational purposes.
+    </footer>
+  </div>
 </html>
 
 <!-- 
