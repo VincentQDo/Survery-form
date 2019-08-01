@@ -8,22 +8,20 @@ html {
 }
 
 /* Nav bar */
-.social-buttons {
+.soc-btn-container {
   background-color: #5cdb95;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
 }
 
-.social-buttons li {
-  display: inline-block;
-}
-
-.social-buttons li a:hover {
+.soc-btn:hover{
   color: #edf5e1;
 }
 
-.social-buttons li a {
+.soc-btn{
   display: block;
   color: #05386b;
   text-decoration: none;
