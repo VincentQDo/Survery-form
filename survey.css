@@ -89,6 +89,7 @@ body {
 }
 
 .text-input {
+  box-sizing: border-box;
   text-align: left;
   border-radius: 2px;
   padding: 10px;
@@ -133,11 +134,26 @@ body {
   font-weight: bold;
 }
 
+textarea {
+  font-family: inherit;
+}
+
 @media only screen and (max-width: 768px) {
   .text-input {
-    width: 90%;
+    width: 80%;
   }
   #comment {
     width: 80%;
   }
 }
+@media only screen and (max-width: 450px) {
+    .text-input {
+      width: 98%;
+    }
+    #comment {
+      width: 90%;
+    }
+    .page-outline{
+      margin: 0% .5rem;
+    }
+  }
